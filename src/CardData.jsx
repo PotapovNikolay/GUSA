@@ -1,0 +1,110 @@
+import React from "react";
+import img1 from './content/Campfire-bro.png'
+
+const data ={
+    CardData:[
+        {
+            id:1,
+            category:'новости',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'clay',
+            bg:'bg-gradient-to-br from-green-200 to-emerald-300 saturate-100',
+            textcolor:' text-teal-600',
+        },
+        {
+            id:2,
+            category:'новости',
+            img:img1,
+            title:'рыбалка',
+            // textcolor:'text-emerald-700',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'shipovnica',
+            bg:'bg-gradient-to-r from-indigo-300 to-purple-300',
+            textcolor: 'text-violet-800',
+        },
+        {
+            id:3,
+            category:'новости',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'shipovnica',
+            bg:'bg-gradient-to-bl from-blue-100 via-blue-300 to-blue-500',
+            textcolor: 'text-blue-700',
+        },
+        {
+            id:4,
+            category:'развлечения',
+            img:img1,
+            title:'продажа',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'clay',
+            bg:'bg-gradient-to-br from-blue-300 to-emerald-200',
+            textcolor:' text-teal-700',
+        },
+        {
+            id:5,
+            category:'развлечения',
+            img:img1,
+            title:'проход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'shipovnica',
+            bg:'bg-gradient-to-br from-indigo-300 to-purple-200 ',
+            textcolor: 'text-violet-800',
+        },
+        {
+            id:6,
+            category:'развлечения',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'clay',
+            bg:'bg-gradient-to-tr from-blue-100 via-blue-300 to-blue-400',
+            textcolor: 'text-blue-700',
+        },
+        {
+            id:7,
+            category:'развлечения',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'shipovnica',
+            bg:'bg-gradient-to-br from-green-200 via-green-300 to-green-200',
+            textcolor:' text-teal-600',
+        },{
+            id:8,
+            category:'игры',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'clay',
+            bg:'bg-gradient-to-br from-blue-300 to-emerald-200',
+            textcolor: 'text-violet-800',
+        },
+        {
+            id:9,
+            category:'игры',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'shipovnica',
+            bg:'bg-gradient-to-bl from-indigo-300 to-purple-200 ',
+            textcolor: 'text-violet-800',
+        },{
+            id:10,
+            category:'игры',
+            img:img1,
+            title:'поход',
+            text:'Масштабирует элементы, делая их больше или меньше. Значения от 0 до 1 уменьшают элемент. Первое значение масштабирует элемент по ширине, второе — по высоте.',
+            author:'clay',
+             bg:'bg-gradient-to-br from-cyan-200 via-blue-300 to-blue-300',
+            textcolor: 'text-violet-800',
+        },
+
+
+    ]
+}
+
+export default data;
