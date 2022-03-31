@@ -8,12 +8,17 @@ import data from "../../CardData";
 
 function SearchBar(props) {
 
+    function help(){
+        alert('вы вставили текст');
+    }
+
     return <form action="/" method="get" className=" w-full flex flex-row justify-end">
         <input
             type="text"
             id="header-search"
             name="s"
             value={props.filter}
+            onPaste={()=>help()}
             onChange={props.SearchText.bind(this)}
             className={"bg-[#f2f3f9] w-11/12  rounded-xl focus:outline-0 "}
         />

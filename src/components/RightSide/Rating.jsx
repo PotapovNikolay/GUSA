@@ -1,11 +1,16 @@
 import React, {useState} from "react";
-import {Chart as ChartJS, ArcElement, Tooltip, Legend, Chart} from 'chart.js';
+import {Chart as ChartJS, ArcElement, Tooltip, Legend} from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Rating = (props) =>
 {
+    const [OnOver,SetOnOver] = useState(false);
+
+    function HandleOver(){
+      SetOnOver(!OnOver)
+    };
 
     const counter={
         id:'counter',
@@ -40,14 +45,14 @@ const Rating = (props) =>
             },
         ],
     };
-    return <div className={"bg-white flex flex-col rounded-xl p-2 space-y-4"}>
+    return <div className={"bg-white flex flex-col rounded-xl p-2 space-y-1"}>
         <div className={'text-2xl text-center'}>
             Рейтинг 6
         </div>
-        <div className={'hover:saturate-150 hover:duration-300 self-center w-7/12'} >
+        <div onMouseOver={()=>HandleOver()} onMouseOut={()=>HandleOver()} className={OnOver?' saturate-200 duration-300 self-center w-7/12': 'self-center w-7/12'} >
             <Doughnut data={data} plugins={[counter]} options={options} />
         </div>
-        <div className={'text-sm pl-4'}>
+        <div className={'text-sm pl-1'}>
             до повышения рейтинга <br/><span className={'font-medium text-lg'}>33%</span>
         </div>
 

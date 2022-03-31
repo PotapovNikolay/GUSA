@@ -7,9 +7,12 @@ import data from "../../CardData";
 const CenterSide = (props) =>
 {
 
+    console.log(props.stateleftside)
+
     let stateleftside = props.stateleftside
 
     const reverseleft = function (){
+        // props.setstateleftside(!props.stateleftside)
         if(stateleftside==false){
             props.setstateleftside(true)
         }
@@ -22,6 +25,7 @@ const CenterSide = (props) =>
     let staterightside = props.staterightside
 
     const reverseright = function (){
+        // props.setstaterightside(!props.staterightside)
         if(staterightside==false){
             props.setstaterightside(true)
         }
@@ -51,7 +55,8 @@ const CenterSide = (props) =>
         </div>
     };
 
-    function Center(){
+
+    function Center(props){
 
         const [section,SetSection] = useState('новости')
         const [filter, SetFilter] = useState('');
@@ -72,9 +77,11 @@ const CenterSide = (props) =>
             SetItems(updatedItem);
         }
 
+
         return(
-            <div  className="flex flex-row h-[42rem]" >
-                {props.stateleftside?(
+            <div  className="flex flex-row h-[42rem]  " >
+
+                {stateleftside?(
                     <RowLeft changeOn1={reverseleft}/>
                 ):null
                 }
@@ -82,7 +89,7 @@ const CenterSide = (props) =>
                     <Nav SetSection={SetSection} filterItem={filterItem} filter={filter} SearchText={SearchText} changeOn2={reverseright} changeOn1={reverseleft}/>
                     <Main section={section} dataSearch={dataSearch} staterightside={staterightside } stateleftside={stateleftside} />
                 </div>
-                {props.staterightside?(
+                {staterightside?(
                     <RowRight changeOn2={reverseright}/>
                 ):null
                 }
